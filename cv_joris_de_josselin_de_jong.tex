@@ -1,0 +1,105 @@
+\documentclass[a4paper,11pt]{moderncv}
+
+% moderncv themes
+\moderncvtheme[blue]{classic}
+
+% Character encoding
+\usepackage[utf8]{inputenc}
+
+% Personal data
+\firstname{Joris}
+\lastname{de Josselin de Jong}
+\title{Kubernetes Engineer}
+\address{Maarssen, Netherlands}
+
+\begin{document}
+
+\makecvtitle
+
+\section{Professional Experience}
+
+\cventry{Jan 2022 -- Present}{Kubernetes Engineer}{True B.V. / TrueFullstaq}{Amsterdam, Netherlands}{}{
+\begin{itemize}
+    \item \textbf{Team Involvement:}
+    \begin{itemize}
+    	\item Worked with the Kubernetes team on support and maintaining and building new Infra
+        \item Recent member of the 'Speedboat' team, focusing on redesigning the company's infrastructure approach
+    \end{itemize}
+    \item \textbf{Migration Projects:}
+    \begin{itemize}
+        \item Migrated and updated critical applications (Keycloak, Rocket-chat, Trident, Cert-manager, CloudNativePostgresOperator) within Kubernetes environments
+    \end{itemize}
+    \item \textbf{Configuration Management:}
+    \begin{itemize}
+        \item Created SaltStack formulas and developed a testing framework using Kitchen and Pre-commit
+    \end{itemize}
+    \item \textbf{Monitoring and Automation:}
+    \begin{itemize}
+        \item Integrated Grafana and Prometheus with SaltStack master, creating custom dashboards
+        \item Implemented automation solutions using Terraform, Python, Bash, Ansible, and Go to streamline operations
+    \end{itemize}
+    \item \textbf{Client Engagement:}
+    \begin{itemize}
+        \item Led client onboarding initiatives through technical workshops, presentations, and hands-on training
+        \item Created and led a workshop about Kubernetes operators, see this repo for more: \url{https://github.com/jorisdejosselintrue/operator-workshop-edgecase-2024}
+        \item Handled support tickets ranging from low-level debugging to complex issues where advice was needed on application issues within k8s
+    \end{itemize}
+    \item \textbf{Container Orchestration:}
+    \begin{itemize}
+        \item Maintained Kubernetes infrastructure running on RKE1 (Rancher Kubernetes Engine)
+        \item Developed various Helm charts
+        \item Worked in a Gitops native way with the use of ArgoCD
+    \end{itemize}
+\end{itemize}}
+
+\cventry{Jan 2021 -- Jan 2022}{Linux Engineer}{True B.V.}{Amsterdam, Netherlands}{}{
+\begin{itemize}
+    \item \textbf{Infrastructure Support:}
+    \begin{itemize}
+        \item Supported Linux-based infrastructure
+        \item Implemented system administration best practices
+        \item Developed and updated Ansible playbooks
+    \end{itemize}
+\end{itemize}}
+
+\cventry{Sep 2020 -- Jan 2021}{System Design Engineer}{Alstom}{Utrecht, Netherlands}{}{
+\begin{itemize}
+    \item \textbf{System Design:}
+    \begin{itemize}
+        \item Contributed to system design and engineering projects based on VMware ESXi
+        \item Developed technical solutions for transportation infrastructure
+    \end{itemize}
+\end{itemize}}
+
+\cventry{Feb 2020 -- Aug 2020}{Intern}{Alstom}{Utrecht, Netherlands}{}{
+\begin{itemize}
+    \item \textbf{Internship Experience:}
+    \begin{itemize}
+        \item Gained practical experience in engineering processes
+        \item Created a thesis on how current applications could run on Kubernetes
+    \end{itemize}
+\end{itemize}}
+
+\section{Education}
+\cventry{2015 -- 2020}{Bachelor of System and Network Engineering}{Hogeschool Utrecht}{Utrecht, Netherlands}{}{
+\begin{itemize}
+    \item Completed Bachelor's degree in System and Network Engineering
+\end{itemize}}
+
+\section{Technical Skills}
+\cvitem{Platforms}{Kubernetes, Linux, OpenNebula, VyOS}
+\cvitem{Configuration Management}{SaltStack, Kitchen, Pre-commit}
+\cvitem{Monitoring}{Grafana (Cloud), Prometheus}
+\cvitem{Programming Languages}{Python, Bash, Go, Terraform, Ansible, Saltstack}
+\cvitem{Applications}{Keycloak, Rocket-chat, NetApp, Cert-manager, Helm, Gitlab-CI, Vault, CloudNativePostgresOperator (CNPG), Pre-commit, Renovate, Git}
+
+\section{Hobbies}
+\cvitem{Magic The Gathering}{Playing and collecting Magic The Gathering cards and participating in drafts with friends}
+\cvitem{Hosting my own stuff}{Recently set up Calibre on Kubernetes to sync all my books automatically with my Kobo E-reader}
+\cvitem{Bouldering}{Enjoying indoor rock climbing and bouldering activities}
+\cvitem{Gaming}{Playing various video games during my free time}
+
+\section{Additional Information}
+\cvitem{CV Availability}{This CV is available on \href{https://github.com/jorisdejosselin/joris-cv-latex}{GitHub} and the PDF can be downloaded from the releases section.}
+
+\end{document}
