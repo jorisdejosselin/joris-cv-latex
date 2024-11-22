@@ -17,15 +17,18 @@ jobs:
       with:
         root_file: cv_joris_de_josselin_de_jong.tex
 
+    - name: Rename PDF with version
+      run: mv cv_joris_de_josselin_de_jong.pdf cv_joris_de_josselin_de_jong_${{ github.event.release.tag_name }}.pdf
+
     - name: Upload PDF as artifact
       uses: actions/upload-artifact@v4
       with:
         name: CV-PDF
-        path: cv_joris_de_josselin_de_jong.pdf
+        path: cv_joris_de_josselin_de_jong_${{ github.event.release.tag_name }}.pdf
 
     - name: Create GitHub Release
       uses: softprops/action-gh-release@v2
       with:
-        files: cv_joris_de_josselin_de_jong.pdf
+        files: cv_joris_de_josselin_de_jong_${{ github.event.release.tag_name }}.pdf
       env:
         GITHUB_TOKEN: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
